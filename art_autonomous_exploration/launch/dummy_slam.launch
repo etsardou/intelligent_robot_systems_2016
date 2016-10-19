@@ -1,0 +1,3 @@
+<launch>
+  <include file="$(find dummy_slam)/launch/crsm_slam_simulation.launch" />
+</launch>

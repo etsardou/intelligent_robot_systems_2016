@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ogmpp_launchers</name>
+  <version>0.0.0</version>
+  <description>The ogmpp_launchers package</description>
+
+  <maintainer email="etsardou@gmail.com">Manos Tsardoulias</maintainer>
+
+  <license>GPL v2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>ogmpp_planners</depend>
+  <depend>ogmpp_resources</depend>
+  <depend>map_server</depend>
+
+  <export>
+  </export>
+</package>

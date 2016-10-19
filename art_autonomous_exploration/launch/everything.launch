@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find ogmpp_launchers)/launch/ogmpp_planners.launch" />
+  <include file="$(find art_autonomous_exploration)/launch/stdr.launch" />
+  <include file="$(find art_autonomous_exploration)/launch/dummy_slam.launch" />
+  <node name="rviz" type="rviz" pkg="rviz" args="-d $(find art_autonomous_exploration)/rviz/config.rviz" />
+  <node name="autonomous_exploration_node" type="main.py" pkg="art_autonomous_exploration" output="screen" />
+  <rosparam file="$(find art_autonomous_exploration)/config/autonomous_expl.yaml" command="load" />
+</launch>

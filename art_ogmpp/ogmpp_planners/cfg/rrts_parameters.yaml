@@ -1,0 +1,4 @@
+simple_rrt_samples: 2000
+simple_rrt_min_dist_from_wall: 0.3
+simple_rrt_max_expansion: 0.2
+simple_rrt_distance_from_target: 0.3

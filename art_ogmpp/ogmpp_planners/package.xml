@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ogmpp_planners</name>
+  <version>0.0.1</version>
+  <description>The ogmpp_planners package</description>
+
+  <maintainer email="etsardou@gmail.com">Manos Tsardoulias</maintainer>
+
+  <license>GPL v2</license>
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>ogmpp_graph</depend>
+  <depend>ogmpp_metrics</depend>
+  <depend>ogmpp_map_loader</depend>
+  <depend>ogmpp_communications</depend>
+  <depend>ogmpp_search_algorithms</depend>
+
+  <export>
+  </export>
+</package>

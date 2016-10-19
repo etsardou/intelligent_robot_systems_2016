@@ -1,0 +1,36 @@
+# Uniform PRM parameters
+uniform_sampling_step: 0.5
+uniform_minimum_distance_from_walls: 0.0
+
+random_sampling_samples: 1000
+random_sampling_min_neigh_dist: 0.7
+random_sampling_min_dist_from_wall: 0.3
+
+halton_sampling_samples: 1000
+halton_sampling_min_neigh_dist: 0.7
+halton_sampling_min_dist_from_wall: 0.3
+
+cell_based_sampling_steps: 6
+cell_based_sampling_min_neigh_dist: 0.7
+cell_based_sampling_min_dist_from_wall: 0.3
+
+random_halton_sampling_samples: 1000
+random_halton_sampling_min_neigh_dist: 0.7
+random_halton_sampling_min_dist_from_wall: 0.3
+random_halton_sampling_randomness_radius: 0.1
+
+gaussian_sampling_samples: 1000
+gaussian_sampling_min_neigh_dist: 0.7
+gaussian_sampling_min_dist_from_wall: 0.3
+gaussian_sampling_standard_deviation: 2.5
+
+obstacle_based_sampling_samples: 1000
+obstacle_based_sampling_min_neigh_dist: 0.7
+obstacle_based_sampling_min_dist_from_wall: 0.3
+obstacle_based_sampling_expansion_step: 0.1
+
+obstacle_based_star_sampling_samples: 1000
+obstacle_based_star_sampling_min_neigh_dist: 0.7
+obstacle_based_star_sampling_min_dist_from_wall: 0.3
+obstacle_based_star_sampling_expansion_step: 0.2
+

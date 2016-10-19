@@ -1,0 +1,5 @@
+<launch>
+  <node name="autonomous_exploration_node" type="main.py" pkg="art_autonomous_exploration" output="screen" />
+
+  <rosparam file="$(find art_autonomous_exploration)/config/autonomous_expl.yaml" command="load" />
+</launch>

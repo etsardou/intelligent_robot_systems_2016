@@ -1,0 +1,26 @@
+# Performs path planning on an OGM
+
+ogmpp_communications/OgmppPathPlanningMsg data
+
+# The method variable is an enum. It can take the following values:
+# - "uniform_prm"
+# - "random_prm"
+# - "halton_prm"
+# - "cell_based_prm"
+# - "random_halton_prm"
+# - "gaussian_prm"
+# - "obstacle_based_prm"
+# - "obstacle_based_star_prm"
+# - "simple_rrt"
+
+string method
+
+# Holds on demand parameters, for per-call parameterization. Check the 
+# ogmpp_planners/cfg/*_parameters for the possible values
+#
+string[] parameters
+float64[] values
+
+---
+nav_msgs/Path path
+string error

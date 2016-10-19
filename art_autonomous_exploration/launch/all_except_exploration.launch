@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find ogmpp_launchers)/launch/ogmpp_planners.launch" />
+  <include file="$(find art_autonomous_exploration)/launch/stdr.launch" />
+  <include file="$(find art_autonomous_exploration)/launch/dummy_slam.launch" />
+  <node name="rviz" type="rviz" pkg="rviz" args="-d $(find art_autonomous_exploration)/rviz/config.rviz" />
+</launch>

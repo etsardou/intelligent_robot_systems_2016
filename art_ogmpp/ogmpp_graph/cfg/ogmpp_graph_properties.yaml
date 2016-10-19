@@ -1,0 +1,4 @@
+enable_visualization: true
+visualization_delay_ms: 0
+nodes_visualization_size: 0.1
+connections_visualization_size: 0.02

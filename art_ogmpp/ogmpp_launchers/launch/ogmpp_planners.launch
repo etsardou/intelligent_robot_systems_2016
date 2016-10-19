@@ -1,0 +1,12 @@
+<launch>
+
+  <node name="ogmpp_planners" type="ogmpp_planners" pkg="ogmpp_planners" output="screen"/>
+  
+  <rosparam file="$(find ogmpp_map_loader)/cfg/map_loader_params.yaml" command="load" />
+  
+  <rosparam file="$(find ogmpp_planners)/cfg/prms_parameters.yaml" command="load" />
+  <rosparam file="$(find ogmpp_planners)/cfg/rrts_parameters.yaml" command="load" />
+  
+  <rosparam file="$(find ogmpp_graph)/cfg/ogmpp_graph_properties.yaml" command="load" />
+
+</launch>

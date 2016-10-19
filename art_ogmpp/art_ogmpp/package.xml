@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>art_ogmpp</name> <!-- This is a meta package! -->
+  <version>0.0.0</version>
+  <description>The ogm path planning package</description>
+
+  <maintainer email="etsardou@gmail.com">Manos Tsardoulias</maintainer>
+
+  <license>GPL v2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <exec_depend>ogmpp_communications</exec_depend>
+  <exec_depend>ogmpp_graph</exec_depend>
+  <exec_depend>ogmpp_launchers</exec_depend>
+  <exec_depend>ogmpp_map_loader</exec_depend>
+  <exec_depend>ogmpp_metrics</exec_depend>
+  <exec_depend>ogmpp_planners</exec_depend>
+  <exec_depend>ogmpp_resources</exec_depend>
+  <exec_depend>ogmpp_search_algorithms</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

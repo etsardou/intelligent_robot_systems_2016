@@ -1,0 +1,36 @@
+# Select the target function
+target_selector: 'random'
+
+# Debugging purposes
+print_velocities: False
+
+# True for calculating targets
+# False for just wandering
+calculate_target: True
+#calculate_target: False
+
+# Topics to read and post data
+# Subscribers
+laser_topic: '/robot0/laser_0'
+sonar_front_topic: '/robot0/sonar_0'
+sonar_left_topic: '/robot0/sonar_1'
+sonar_right_topic: '/robot0/sonar_2'
+sonar_rear_left_topic: '/robot0/sonar_3'
+sonar_rear_right_topic: '/robot0/sonar_4'
+ogm_topic: '/slam/occupancyGridMap'
+
+# Publishers
+coverage_pub_topic: '/as/robot/coverage'
+speeds_pub_topic: '/robot0/cmd_vel'
+robot_trajectory_topic: '/as/robot/trajectory'
+path_pub_topic: '/as/path'
+subgoals_pub_topic: '/as/subgoals'
+curr_target_pub_topic: '/as/current_target'
+goals_pub_topic: '/as/goals'
+
+# Frames
+map_frame: '/map'
+base_footprint_frame: '/base_footprint'
+
+# Cell Size 10, 20, 30, 50
+cell_size: 20

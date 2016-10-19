@@ -1,0 +1,5 @@
+<!--Simulation Mode SLAM Launch -->
+<launch>
+        <node name="dummy_slam_node" type="dummy_slam_node" pkg="dummy_slam" respawn="false" ns="dummy_slam" output="screen"/>
+	<rosparam file="$(find dummy_slam)/config/dummy_slam/dummy_slam_parameters.yaml" command="load" ns="dummy_slam"/>
+</launch>
