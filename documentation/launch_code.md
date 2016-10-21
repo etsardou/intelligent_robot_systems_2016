@@ -13,3 +13,9 @@ roslaunch art_autonomous_exploration everything.launch
 ```
 
 This will launch the simulator, the code and rviz.
+
+In order to actually see the simulator's GUI execute:
+
+```bash
+roslaunch stdr_gui stdr_gui.launch
+```
