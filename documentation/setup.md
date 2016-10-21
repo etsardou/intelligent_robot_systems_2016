@@ -1,6 +1,6 @@
 ##Installation - Setup
 
-This series of challenges require the utilization of the **STDR Simulator** which is a collection **ROS** packages. The operating system required is **Ubuntu 14.04**.
+This series of challenges require the utilization of the **STDR Simulator** which is a collection of **ROS** packages. The operating system required is **Ubuntu 14.04**.
 
 [ROS](http://www.ros.org/) is a "flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms." 
 
