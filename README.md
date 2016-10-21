@@ -4,6 +4,8 @@ This code was created in order to allow experimentation towards developing speci
 
 The perfect score is 90 points (30 pts = 1 degree)!
 
+At the end you must submit a **compressed file containing this folder** with your changes and a **report on the selections you have made (up to 10 pages)**.
+
 - [Installation / setup](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/documentation/setup.md)
 - [Modules description](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/documentation/structure.md)
 - [How to execute the code](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/documentation/launch_code.md)
