@@ -1,4 +1,12 @@
-##Installation - Setup
+## Ready-to-deploy system
+
+If you do not have Linux or do not want to pollute your Linux distro with extra packages, you can use the ready-to-deply OVA file located [here](https://www.dropbox.com/s/go0ekx1vexm6rg1/IRS_course_2016.ova?dl=0). Username is ```manos``` and password is ```robot2016```.
+
+Remember that the code will operate correctly but **much slower** that a real Linux installation.
+
+Note: If the OVA file throws an error when imported deactivate the USB devices from the virtual machine manager.
+
+## Installation - Setup
 
 This series of challenges require the utilization of the **STDR Simulator** which is a collection of **ROS** packages. The operating system required is **Ubuntu 14.04**.
 
@@ -18,6 +26,7 @@ The required packages you have to download are STDR Simulator and the current re
 ```
 sudo apt-get install git mercurial ros-indigo-map-server python-pip libffi-dev
 sudo apt-get install gfortran libopenblas-dev liblapack-dev
+sudo pip install cython
 sudo pip install cffi scikit-image
 sudo easy_install skipy
 ```
@@ -53,4 +62,5 @@ cd ~/catkin_ws/src/intelligent_robot_systems_2016/art_autonomous_exploration/src
 make
 ```
 If the build was successful you are ok!
+
 
