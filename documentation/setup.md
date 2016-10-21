@@ -18,7 +18,7 @@ The required packages you have to download are STDR Simulator and the current re
 ```
 sudo apt-get install git mercurial ros-indigo-map-server python-pip libffi-dev
 sudo apt-get install gfortran libopenblas-dev liblapack-dev
-sudo pip install cffi
+sudo pip install cffi scikit-image
 sudo easy_install skipy
 ```
 
