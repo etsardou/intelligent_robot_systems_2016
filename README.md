@@ -1,6 +1,6 @@
 ##Intelligent Robot Systems 2016-2017
 
-This code was created in order to allow for experimentation, towards developing specific modules of an autonomous simulated vehicle that performs full exploration **and coverage** of an unknown a priori environment. Next, you can find instructions on how to setup the code in your PC / laptop, the description of the code, as well as the challenges.
+This code was created in order to allow experimentation towards developing specific modules of an autonomous simulated vehicle that performs full exploration **and coverage** of an unknown a priori environment. Next, you can find instructions on how to setup the code in your PC / laptop, the description of the code, as well as the description challenges.
 
 The perfect score is 90 points (30 pts = 1 degree)!
 
@@ -12,15 +12,17 @@ The perfect score is 90 points (30 pts = 1 degree)!
 
 Challenge 1 [*10 pts*]: **Laser-based obstacle avoidance**
 
-You must fill the part of the code that calculates linear and rotational velocities using the LIDAR values. The objective is for the robot to wander but not collide to obstacles. Please add the code [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/speeds_assignment.py#L75) and [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/speeds_assignment.py#L117).
+You must fill the part of the code that calculates linear and rotational velocities using the LIDAR values. The objective is for the robot to wander, but not collide to obstacles. Please add the code [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/speeds_assignment.py#L75) and [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/speeds_assignment.py#L117).
 
-Notes: The robot **must** have a maximum absolute linear speed of **0.3 m/s** and maximum absolute rotational speed **0.3 rad/sec**. In order to check this functionality turn [this](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/config/autonomous_expl.yaml#L9) to ```False```.
+Notes: The robot **must** have a maximum absolute linear speed of **0.3 m/s** and maximum absolute rotational speed **0.3 rad/sec**. 
+
+In order to check this functionality turn [this](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/config/autonomous_expl.yaml#L9) to ```False```.
 
 ---
 
 Challenge 2 [*5 pts*]: **Path visualization**
 
-This task is about making the path visible to RViz. Please add the code [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/navigation.py#L233). The ```self.robot_perception.resolution``` and ```self.robot_perception.origin``` parameters may be useful, thus you must understand how the robot perception module works.
+This task is about making the path visible to the RViz tool. Please add the code [here](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/navigation.py#L233). The ```self.robot_perception.resolution``` and ```self.robot_perception.origin``` parameters may be useful, thus you must understand how the robot perception module works / stores the data.
 
 In order to test it, the exploration mode must be enabled, thus turn [this](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/config/autonomous_expl.yaml#L9) to ```True```. This value will be kept ```True``` for all the remaining tasks.
 
@@ -50,11 +52,11 @@ This task is about making the subgoal checking routine smarter. Right now it che
 
 Challenge 6 [*15 pts*]: **Smart target selection**
 
-This task is about finding a smart approach in the target selection problem. Remember that this approach must work well in **a priori unknown environments** which may be quite heterogeneous in structure (e.g. wide, narrow or both). The available tools you have are the robot's pose, the so far explored map, the coverage field containing information on what is already covered by the robot, the Brushfire field of the OGM, the skeleton of the OGM and a topological graph.
+This task is about finding a smart approach of the target selection problem. Remember that this approach must work well in **a-priori unknown environments** which may be quite heterogeneous in structure (e.g. wide, narrow or both). The available tools you have are the robot's pose, the so far explored map, the coverage field containing information on what is already covered by the robot, the Brushfire field of the OGM, the skeleton of the OGM and a topological graph.
 
-It is not necessary to use all of them. If you don't remember to **erase them** in order to speed up the exploration, since as you will notice more available information requires more time to calculate. 
+It is not necessary to use all of them. If you don't, remember to **erase them** in order to speed up the exploration, since as you will notice, more available information requires more time to calculate. 
 
-Also there is a possibility of path planning to fail for specific targets that are close to obstacles or that they exist in a "strage" topology. In that case you must write code to deal with these cases (e.g. select a more naive target selection method). Bear in mind that the robot should always have a target to reach in order for the exploration to end!.
+Also there is a possibility of the path planning to fail for specific targets that are close to obstacles or that they exist in a "strange" topology. In that case, you must write code to deal with these cases (e.g. select a more naive target selection method). Bear in mind that the robot should **always have a target to reach** in order for the exploration and full coverage to end!.
 
 Please alter [this](https://github.com/etsardou/intelligent_robot_systems_2016/blob/master/art_autonomous_exploration/src/target_selection.py#L39) code.
 
