@@ -8,7 +8,7 @@ This series of challenges require the utilization of the **STDR Simulator** whic
 
 ###ROS installation
 
-First of all you must install ROS. The flavour is ROS Indigo if you have Ubuntu 14.04 installed, or ROS hydro for Ubuntu 12.04. The installation instructions can be found here:
+First of all you must install ROS. The flavour is ROS Indigo if you have Ubuntu 14.04 installed. The installation instructions can be found here:
 - [ROS Indigo installation](http://wiki.ros.org/indigo/Installation/Ubuntu)
 
 ###Download the required packages
@@ -16,7 +16,8 @@ First of all you must install ROS. The flavour is ROS Indigo if you have Ubuntu 
 The required packages you have to download are STDR Simulator and the current repository. Before them install the following libraries:
 
 ```
-sudo apt-get install git mercurial ros-indigo-map-server
+sudo apt-get install git mercurial ros-indigo-map-server python-pip libffi-dev
+sudo pip install cffi
 ```
 
 Create a catkin repository in a folder you want (in this tutorial we create in in $HOME):
@@ -44,7 +45,7 @@ git clone https://github.com/etsardou/intelligent_robot_systems_2016.git
 Build the packages:
 ```bash
 cd ~/catkin_ws
-catkin_make
+catkin_make -j1
 
 cd ~/catkin_ws/src/intelligent_robot_systems_2016/art_autonomous_exploration/src
 make
