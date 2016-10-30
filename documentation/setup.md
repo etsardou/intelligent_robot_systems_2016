@@ -28,7 +28,7 @@ sudo apt-get install git mercurial ros-indigo-map-server python-pip libffi-dev
 sudo apt-get install gfortran libopenblas-dev liblapack-dev
 sudo pip install cython
 sudo pip install cffi scikit-image
-sudo easy_install skipy
+sudo easy_install scipy
 ```
 
 Create a catkin repository in a folder you want (in this tutorial we create in in $HOME):
