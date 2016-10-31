@@ -31,6 +31,11 @@ sudo pip install cffi scikit-image
 sudo easy_install scipy
 ```
 
+For Ubuntu 16.04 / ROS Kinetic users, you must also install:
+```
+sudo apt-get install qt4-dev-tools qt4-qmake qt4-designer
+```
+
 Create a catkin repository in a folder you want (in this tutorial we create in in $HOME):
 ```bash
 cd ~
@@ -46,6 +51,8 @@ git clone https://github.com/stdr-simulator-ros-pkg/stdr_simulator.git
 cd stdr_simulator
 git checkout autonomous_systems
 ```
+
+For Ubuntu 16.04 / ROS Kinetic users, you must erase the [following line](https://github.com/stdr-simulator-ros-pkg/stdr_simulator/blob/autonomous_systems/stdr_server/CMakeLists.txt#L40).
 
 Next, clone the Intelligent Robotic System's repository:
 ```bash
