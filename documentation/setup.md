@@ -21,10 +21,19 @@ First of all you must install ROS. The flavour is ROS Indigo if you have Ubuntu 
 
 ###Download the required packages
 
+Before you start, make sure that pip (python) is installed and its version is greater than 9.01. You can install or update to the latest version with the following commands:
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+```
+
 The required packages you have to download are STDR Simulator and the current repository. Before them install the following libraries:
 
 ```
 sudo apt-get install git mercurial ros-indigo-map-server python-pip libffi-dev
+(NOTE for Ubuntu 16.04 / ROS Kinetic users replace "ros-indigo-map-server" with "ros-kinetic-map-server")
+
 sudo apt-get install gfortran libopenblas-dev liblapack-dev
 sudo pip install cython
 sudo pip install cffi scikit-image
