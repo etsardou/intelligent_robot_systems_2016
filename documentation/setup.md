@@ -21,7 +21,7 @@ First of all you must install ROS. The flavour is ROS Indigo if you have Ubuntu 
 
 ###Download the required packages
 
-Before you start, make sure that pip (python) is installed and its version is greater than 9.01. You can install or update to the latest version with the following commands:
+Note for Ubuntu 16.04: Before you start, make sure that pip (python) is installed and its version is greater than 9.01. You can install or update to the latest version with the following commands:
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
