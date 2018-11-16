@@ -1,6 +1,6 @@
 # Files and structure
 
-The ```Intelligent Robot Systems 2016-2017``` repository contains three ROS packages, named ```art_autonomous_exploration```, ```art_dummy_slam``` and ```art_ogmpp```. These are: 
+The ```Intelligent Robot Systems``` repository contains three ROS packages, named ```art_autonomous_exploration```, ```art_dummy_slam``` and ```art_ogmpp```. These are: 
 
 - ```art_dummy_slam```: Provides the SLAM algorithms, i.e. the environment's mapping. It must be noted that a dummy SLAM is executed (the computed map will always be correct and not deformed), in order for the code to be able to run in slower machines, or even VMs. The map is provided via a ROS topic.
 - ```art_ogmpp```: Provides a path planning algorithm using A* and uniform decomposition PRM. The path planning can be called via a ROS service.
